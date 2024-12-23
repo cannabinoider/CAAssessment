@@ -1,18 +1,13 @@
 import React from 'react';
-import Common from '../../Components/SignInComponents/common';
-import Desktop from '../../Components/SignInComponents/desktop';
+import Common from '../../Components/SignInComponents/Common';
+import Desktop from '../../Components/SignInComponents/Desktop';
 
-export default function signin() {
+export default function Signin() {
   return (
-    <div className="flex flex-col md:flex-row h-screen w-full">
+    <div className="h-screen grid grid-cols-2 max-lg:grid-cols-1">
     
-    <div className="w-full md:w-1/2 flex items-center justify-center">
-      <Desktop />
-    </div>
-
-    <div className="w-full md:w-1/2 flex items-center justify-center">
-      <Common />
-    </div>
-  </div>
-  )
+        <Desktop />
+        <Common />
+      </div>
+  );
 }
